@@ -1,7 +1,42 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   list-style: none;
   text-decoration: none; }
+
+.circulo1, .circulo2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: blue;
+  border: 3px solid black; }
+
+.circulo1 {
+  -webkit-animation: circulo1 3s infinite alternate;
+          animation: circulo1 3s infinite alternate; }
+
+@-webkit-keyframes circulo1 {
+  to {
+    width: 350px;
+    height: 350px; } }
+
+@keyframes circulo1 {
+  to {
+    width: 350px;
+    height: 350px; } }
+.circulo2 {
+  -webkit-animation: circulo2 3s infinite alternate-reverse;
+          animation: circulo2 3s infinite alternate-reverse;
+  background: green; }
+
+@-webkit-keyframes circulo2 {
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5); } }
+
+@keyframes circulo2 {
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5); } }
 
 /*# sourceMappingURL=main.css.map */

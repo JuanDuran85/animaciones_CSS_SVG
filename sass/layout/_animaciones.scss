@@ -1,0 +1,30 @@
+.circulo1 , .circulo2 {
+    width: $dosciento;
+    height: $dosciento;
+    border-radius: $cincuenporcien;
+    background: blue;
+    border: $borde1;
+}
+
+.circulo1 {
+    animation: circulo1 3s infinite alternate;
+}
+
+@keyframes circulo1 {
+    to {
+        width: $trescincuenta;
+        height: $trescincuenta;
+    }
+}
+
+.circulo2 {
+    animation: circulo2 3s infinite alternate-reverse;
+    background: $verde;
+}
+
+@keyframes circulo2 {
+    to {
+        transform: scale(1.5);
+    }
+}
+
