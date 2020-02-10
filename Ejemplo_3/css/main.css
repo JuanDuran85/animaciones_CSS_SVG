@@ -1,3 +1,45 @@
+.menu, [class^="menu--"] {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0; }
 
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu--hijo {
+  position: absolute;
+  /*anteriormente se utilizaba el display none para ocultar el elemento */
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-transform: scale(0, 0);
+          transform: scale(0, 0);
+  /* hijos del hijo */ }
+  .menu--hijo ul {
+    top: 0;
+    left: 100%; }
+
+[class^="menu__parte"] {
+  background: rgba(19, 17, 17, 0.788);
+  position: relative; }
+  [class^="menu__parte"]:hover {
+    background: rgba(3, 2, 2, 0.911);
+    /* con > se muestra solo el nivel basico original */ }
+    [class^="menu__parte"]:hover > .menu--hijo {
+      /* y el display block para mostrar el mismo elemento despues de ocultarlo*/
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1); }
+
+[class^="menu__a"] {
+  display: block;
+  padding: 0.8em 1.5em;
+  color: white;
+  white-space: nowrap; }
 
 /*# sourceMappingURL=main.css.map */

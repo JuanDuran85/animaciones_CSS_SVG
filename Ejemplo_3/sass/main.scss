@@ -1,0 +1,48 @@
+.menu, [class^="menu--"] {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu--hijo {
+    position: absolute;
+    /*anteriormente se utilizaba el display none para ocultar el elemento */
+    // display: none;
+    transition: transform 0.6s;
+    transform-origin: top center;
+    transform: scale(0,0);
+
+    /* hijos del hijo */
+    ul {
+        top: 0;
+        left: 100%;
+    }
+}
+
+[class^="menu__parte"] {
+    background: rgba(19, 17, 17, 0.788);
+    position: relative;
+
+    &:hover {
+        background: rgba(3, 2, 2, 0.911);
+        
+        /* con > se muestra solo el nivel basico original */
+        > .menu--hijo {
+            /* y el display block para mostrar el mismo elemento despues de ocultarlo*/
+            //display: block;
+            transform: scale(1,1);
+        }
+    }
+}
+
+[class^="menu__a"] {
+    display: block;
+    padding: 0.8em 1.5em;
+    color: white;
+    white-space: nowrap;
+}
