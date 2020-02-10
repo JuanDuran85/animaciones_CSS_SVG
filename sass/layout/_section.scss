@@ -1,0 +1,23 @@
+p {
+    background: coral;
+    margin: $diezpx;
+    padding: $diezpx;
+    font-size: $tipografy1;
+    font-weight: $seiscien;
+    /*la propiedad transition permite indicar el tiempo y una propiedad en especifico*/
+    /*En este caso, se piede al navegador que con cualquier propiedad que cambie, calcule todos los estados intermedios en el tiempo definido*/
+    transition: all 0.8s;
+    /*Por lo que se puede observar que la propiedad text-align no es animable*/
+    .animar &.parrafo1 {
+        text-align: right;
+    }
+}
+span {
+    position: relative;
+    left: 0; /* 0 como estado incial*/
+    transition: all 0.8s;
+
+    .animar & {
+        left: 86%;
+    }
+}
