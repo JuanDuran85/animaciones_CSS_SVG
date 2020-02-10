@@ -10,6 +10,18 @@ Cuando se cambia una propiedad CSS, el navegador necesita reaccionar a ese cambi
 * Paint (pintar los pixeles de los elementos).
 * Composite (combina y dibuja las capas en la pantalla).
 
+## Propiedades de CSS de algunos alementos
+
+1. initial: Establece el valor de la propiedad en su valor por defecto de la especificacion.
+
+2. inherit: fuerza al elemento a heredar la propiedad de su padre, incluso aquellas que no se heredan por especificacion.
+
+3. unset: borra los valores declarados y los regresa a sus valores inciales. Es decir, a los heredados por su padres o a los inciales.
+
+4. revert: regresa la propiedad a los estilos del usuario o del user agent.
+
+5. currentColor (camelCase): usa el color definido en el contexto.
+
 ## Propiedes importantes de CSS para animaciones
 
 1. keyframes: determina los puntos claves o paradas donde algo cambia.

@@ -1,0 +1,42 @@
+/*Usos de currentColor y keyframes*/
+body {
+    color: red;
+}
+
+article {
+    // color: purple;   
+    /*si se comenta el color de incio, por defecto la propiedad color tomará el valor por defecto del navegador*/
+    animation: colores 10s infinite alternate;
+}
+
+a {
+    color: currentColor;
+    border: 1px solid currentColor;
+    text-decoration: none;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        background: currentColor;
+    }
+}
+
+@keyframes colores {
+    25% {
+        color: rgb(240, 240, 252);
+    }
+
+    50% {
+        color: yellow;
+    }
+
+    75% {
+        color: magenta;
+    }
+
+    100% {
+        color: rgb(67, 245, 12);
+    }
+}

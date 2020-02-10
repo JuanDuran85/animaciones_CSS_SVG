@@ -1,6 +1,6 @@
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   list-style: none;
   text-decoration: none; }
 
@@ -28,7 +28,7 @@
 p {
   background: coral;
   margin: 10px;
-  padding: 10px;
+  padding: 0.5em;
   font-size: large;
   font-weight: 600;
   /*la propiedad transition permite indicar el tiempo y una propiedad en especifico*/
@@ -38,11 +38,18 @@ p {
   .animar p.parrafo1 {
     text-align: right; }
 
+.animar p {
+  background: initial; }
+
 span {
+  font-size: 30px;
+  display: inline-block;
+  padding: inherit;
   position: relative;
   left: 0;
   /* 0 como estado incial*/
-  transition: all 0.8s; }
+  transition: all 0.8s;
+  font-size: unset; }
   .animar span {
     left: 86%; }
 
