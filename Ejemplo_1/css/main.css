@@ -46,6 +46,32 @@ span {
   .animar span {
     left: 86%; }
 
+strong {
+  display: inline-block;
+  transition: all 0.8s; }
+  .animar strong {
+    transform: translateX(calc(100vw - 100% - 2em)); }
+
+.flex {
+  display: flex;
+  background: cadetblue;
+  padding: 1em;
+  justify-content: space-between;
+  margin: 2em; }
+
+.item {
+  padding: 3em 5em;
+  color: darkred;
+  border: 1px solid black;
+  transition: all 0.8s; }
+  .item:first-child {
+    background: floralwhite;
+    order: 0; }
+
+/*al tratar de animar la propiedad order de flex, no realiza una animacion por estados, sino directamente porque es un entero*/
+.animar .item:first-child {
+  order: 5; }
+
 button {
   padding: 10px;
   margin: 10px;
