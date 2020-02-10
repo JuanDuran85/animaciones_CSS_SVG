@@ -1,6 +1,6 @@
 .circulo1 , .circulo2 {
-    width: $dosciento;
-    height: $dosciento;
+    width: $cincuenta;
+    height: $cincuenta;
     border-radius: $cincuenporcien;
     background: blue;
     border: $borde1;
@@ -12,8 +12,8 @@
 
 @keyframes circulo1 {
     to {
-        width: $trescincuenta;
-        height: $trescincuenta;
+        width: $cien;
+        height: $cien;
     }
 }
 
