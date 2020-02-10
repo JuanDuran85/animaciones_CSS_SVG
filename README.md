@@ -2,6 +2,11 @@
 
 Una animación es un cambio de un estado inical a un estado final. Cuando no se declara el estado incial, igual esta presente por el navegador.
 
+Existen dos tipos de animaciones para CSS:
+
+1. Transiciones: son animaciones de un estado inicial a un estado final, de una propiedad a otra. Estas requieren un evento para ejecutarse.
+2. Animaciones: tienen momentos intermedios llamados keyframe. Pueden lanzarse automaticamente, detenerse, reanudarse.
+
 ## Trigger
 
 Cuando se cambia una propiedad CSS, el navegador necesita reaccionar a ese cambio. Por lo tanto, los tipos de cambios son de mayor a menor costo de recursos del CPU. Es decir, el navegador interpreta todos los estados e interpolaciones de las animaciones. Trabajando por etapas, como:
