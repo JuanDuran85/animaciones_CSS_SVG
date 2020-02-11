@@ -1,0 +1,12 @@
+body {
+  font-size: 2.5em; }
+
+a {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s; }
+  a:hover {
+    color: chartreuse; }
+
+/*# sourceMappingURL=main.css.map */

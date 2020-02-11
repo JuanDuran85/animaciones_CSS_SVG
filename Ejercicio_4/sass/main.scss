@@ -1,0 +1,12 @@
+body {
+    font-size: 2.5em;
+}
+
+a {
+    transition-property: color;
+    transition-duration: 1s;
+
+    &:hover {
+        color: chartreuse;
+    }
+}

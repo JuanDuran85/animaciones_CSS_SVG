@@ -4,7 +4,7 @@ Una animación es un cambio de un estado inical a un estado final. Cuando no se 
 
 Existen dos tipos de animaciones para CSS:
 
-1. Transiciones: son animaciones de un estado inicial a un estado final, de una propiedad a otra. Estas requieren un evento para ejecutarse.
+1. Transiciones: son animaciones de un estado inicial a un estado final, de una propiedad a otra. Por lo que permiten que las propiedades CSS cambien suavemente en un periodo de tiempo determinado. Se pueden definir multiples transiciones separadas por coma. Estas requieren un evento para ejecutarse.
 2. Animaciones: tienen momentos intermedios llamados keyframe. Pueden lanzarse automaticamente, detenerse, reanudarse.
 
 ## Trigger
@@ -18,20 +18,25 @@ Cuando se cambia una propiedad CSS, el navegador necesita reaccionar a ese cambi
 ## Propiedades de CSS de algunos alementos
 
 1. initial: Establece el valor de la propiedad en su valor por defecto de la especificacion.
-
 2. inherit: fuerza al elemento a heredar la propiedad de su padre, incluso aquellas que no se heredan por especificacion.
-
 3. unset: borra los valores declarados y los regresa a sus valores inciales. Es decir, a los heredados por su padres o a los inciales.
-
 4. revert: regresa la propiedad a los estilos del usuario o del user agent.
-
 5. currentColor (camelCase): usa el color definido en el contexto.
+
+Nota importante: Existen propiedes animables y no animables. Como por ejemplo, la propiedad order de flexbox en teoria es animable, pero en la practica no lo es. Al igual que text-aling. En otras palabras, cada vez que el tipo de animacion de una propiedad indique que es como un entero (as integer), no se puede animar por estados. Igualmente, los elementos inline no se pueden transformar porque no tienen dimension.
 
 ## Propiedes importantes de CSS para animaciones
 
-1. keyframes: determina los puntos claves o paradas donde algo cambia.
+1. Transition: posee distintas propiedades, como:
+   * transition-property: all | none | propiedad [, propiedad]
+   * transition-duration: 0s | time[, time]. No se permiten valores negativos
+   * transition-timing-function (easing functions): Como se calculará cada valor intermedio mientras dura la transición. 
+        - Keyword: ease | linear | ease-in | ease-out | ease-in-out | step-start | step-end.
+        - Functions: steps(), cubic-bezier().
+   * transition-delay: Indica cuando la transición iniciará (default 0s)
+   * transition (shorthand): transition-property transition-duration transition-delay transition-time-function.
 
-Nota importante: Existen propiedes animables y no animables. Como por ejemplo, la propiedad order de flexbox en teoria es animable, pero en la practica no lo es. Al igual que text-aling. En otras palabras, cada vez que el tipo de animacion de una propiedad indique que es como un entero (as integer), no se puede animar por estados. Igualmente, los elementos inline no se pueden transformar porque no tienen dimension.
+2. keyframes: determina los puntos claves o paradas donde algo cambia.
 
 Para mas informacion, visita:
 
