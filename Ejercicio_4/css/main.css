@@ -1,12 +1,30 @@
-body {
-  font-size: 2.5em; }
+* {
+  font-size: 1.3em;
+  text-decoration: none;
+  list-style: none; }
 
 a {
-  -webkit-transition-property: color;
-  transition-property: color;
+  background-color: #416841;
+  color: white;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
   -webkit-transition-duration: 1s;
-          transition-duration: 1s; }
+          transition-duration: 1s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  /* todo lo anterior se puede resumir o implementar en una sola propiedad*/ }
   a:hover {
-    color: chartreuse; }
+    color: #151518;
+    background-color: #d1501d; }
+
+.android {
+  margin: 2em;
+  width: 500px;
+  height: 500px; }
+
+.icono {
+  fill: #AAC148; }
 
 /*# sourceMappingURL=main.css.map */

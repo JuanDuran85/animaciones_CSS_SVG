@@ -1,12 +1,35 @@
-body {
-    font-size: 2.5em;
+* {
+    font-size: 1.3em;
+    text-decoration: none;
+    list-style: none;
 }
 
 a {
-    transition-property: color;
+    background-color: rgb(65, 104, 65);
+    color: white;
+    transition-property: background-color;
     transition-duration: 1s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+    /* todo lo anterior se puede resumir o implementar en una sola propiedad*/
+    //transition: background-color 1s 1s ease-in-out;
 
     &:hover {
-        color: chartreuse;
+        color: rgb(21, 21, 24);
+        background-color: rgb(209, 80, 29);
     }
+}
+
+.android {
+    margin: 2em;
+    width: 500px;
+    height: 500px;
+}
+
+.icono {
+    fill: #AAC148;
+}
+
+.bizquierdo {
+    
 }

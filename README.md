@@ -30,10 +30,10 @@ Nota importante: Existen propiedes animables y no animables. Como por ejemplo, l
 1. Transition: posee distintas propiedades, como:
    * transition-property: all | none | propiedad [, propiedad]
    * transition-duration: 0s | time[, time]. No se permiten valores negativos
-   * transition-timing-function (easing functions): Como se calculará cada valor intermedio mientras dura la transición. 
+   * transition-timing-function (easing functions): indica la aceleracion de existir. Como se calculará cada valor intermedio mientras dura la transición. 
         - Keyword: ease | linear | ease-in | ease-out | ease-in-out | step-start | step-end.
         - Functions: steps(), cubic-bezier().
-   * transition-delay: Indica cuando la transición iniciará (default 0s)
+   * transition-delay: Indica cuando la transición iniciará (defecto "*default*" 0s)
    * transition (shorthand): transition-property transition-duration transition-delay transition-time-function.
 
 2. keyframes: determina los puntos claves o paradas donde algo cambia.
