@@ -6,14 +6,10 @@
 a {
   background-color: #416841;
   color: white;
-  -webkit-transition-property: background-color;
   transition-property: background-color;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  transition-delay: 1s;
+  transition-timing-function: ease-in-out;
   /* todo lo anterior se puede resumir o implementar en una sola propiedad*/ }
   a:hover {
     color: #151518;
@@ -32,7 +28,6 @@ a {
 
 .bizquierdo, .bderecho {
   /* se pueden utilizar distintas propiedades separadas por coma*/
-  -webkit-transition: fill 1s ease-in, stroke 2s ease-out, stroke-width 2s ease-in-out;
   transition: fill 1s ease-in, stroke 2s ease-out, stroke-width 2s ease-in-out; }
   .bizquierdo:hover, .bderecho:hover {
     fill: #AA5645;

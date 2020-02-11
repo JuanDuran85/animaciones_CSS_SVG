@@ -1,37 +1,22 @@
 @charset "UTF-8";
 /*Usos de currentColor y keyframes*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_2\/sass\/main\.scss}line{font-family:\000032}}
 body {
   color: red; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_2\/sass\/main\.scss}line{font-family:\000036}}
 article {
   /*si se comenta el color de incio, por defecto la propiedad color tomará el valor por defecto del navegador*/
-  -webkit-animation: colores 10s infinite alternate;
-          animation: colores 10s infinite alternate; }
+  animation: colores 10s infinite alternate; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_2\/sass\/main\.scss}line{font-family:\0000312}}
 a {
   color: currentColor;
   border: 1px solid currentColor;
   text-decoration: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_2\/sass\/main\.scss}line{font-family:\0000317}}
   a::after {
     content: "";
     display: inline-block;
     width: 1em;
     height: 1em;
     background: currentColor; }
-
-@-webkit-keyframes colores {
-  25% {
-    color: #f0f0fc; }
-  50% {
-    color: yellow; }
-  75% {
-    color: magenta; }
-  100% {
-    color: #43f50c; } }
 
 @keyframes colores {
   25% {

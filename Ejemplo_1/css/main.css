@@ -1,11 +1,9 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_1\/sass\/base\/_reset\.scss}line{font-family:\000031}}
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_1\/sass\/layout\/_animaciones\.scss}line{font-family:\000031}}
 .circulo1, .circulo2 {
   width: 50px;
   height: 50px;
@@ -13,36 +11,20 @@
   background: blue;
   border: 3px solid black; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_1\/sass\/layout\/_animaciones\.scss}line{font-family:\000039}}
 .circulo1 {
-  -webkit-animation: circulo1 3s infinite alternate;
-          animation: circulo1 3s infinite alternate; }
-
-@-webkit-keyframes circulo1 {
-  to {
-    width: 100px;
-    height: 100px; } }
+  animation: circulo1 3s infinite alternate; }
 
 @keyframes circulo1 {
   to {
     width: 100px;
     height: 100px; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_1\/sass\/layout\/_animaciones\.scss}line{font-family:\0000320}}
 .circulo2 {
-  -webkit-animation: circulo2 3s infinite alternate-reverse;
-          animation: circulo2 3s infinite alternate-reverse;
+  animation: circulo2 3s infinite alternate-reverse;
   background: green; }
-
-@-webkit-keyframes circulo2 {
-  to {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5); } }
 
 @keyframes circulo2 {
   to {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5); } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_1\/sass\/layout\/_section\.scss}line{font-family:\000031}}
+    transform: scale(1.5); } }
 p {
   background: coral;
   margin: 10px;
@@ -51,18 +33,14 @@ p {
   font-weight: 600;
   /*la propiedad transition permite indicar el tiempo y una propiedad en especifico*/
   /*En este caso, se piede al navegador que con cualquier propiedad que cambie, calcule todos los estados intermedios en el tiempo definido*/
-  -webkit-transition: all 0.8s;
   transition: all 0.8s;
   /*Por lo que se puede observar que la propiedad text-align no es animable*/ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_1\/sass\/layout\/_section\.scss}line{font-family:\0000312}}
   .animar p.parrafo1 {
     text-align: right; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_1\/sass\/layout\/_section\.scss}line{font-family:\0000317}}
 .animar p {
   background: initial; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_1\/sass\/layout\/_section\.scss}line{font-family:\0000321}}
 span {
   font-size: 30px;
   display: inline-block;
@@ -70,57 +48,37 @@ span {
   position: relative;
   left: 0;
   /* 0 como estado incial*/
-  -webkit-transition: all 0.8s;
   transition: all 0.8s;
   font-size: unset; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_1\/sass\/layout\/_section\.scss}line{font-family:\0000330}}
   .animar span {
     left: 86%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_1\/sass\/layout\/_section\.scss}line{font-family:\0000335}}
 strong {
   display: inline-block;
-  -webkit-transition: all 0.8s;
   transition: all 0.8s; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_1\/sass\/layout\/_section\.scss}line{font-family:\0000339}}
   .animar strong {
-    -webkit-transform: translateX(calc(100vw - 100% - 2em));
-            transform: translateX(calc(100vw - 100% - 2em)); }
+    transform: translateX(calc(100vw - 100% - 2em)); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_1\/sass\/layout\/_section\.scss}line{font-family:\0000344}}
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background: cadetblue;
   padding: 1em;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 2em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_1\/sass\/layout\/_section\.scss}line{font-family:\0000352}}
 .item {
   padding: 3em 5em;
   color: darkred;
   border: 1px solid black;
-  -webkit-transition: all 0.8s;
   transition: all 0.8s; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_1\/sass\/layout\/_section\.scss}line{font-family:\0000358}}
   .item:first-child {
     background: floralwhite;
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0; }
+    order: 0; }
 
 /*al tratar de animar la propiedad order de flex, no realiza una animacion por estados, sino directamente porque es un entero*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_1\/sass\/layout\/_section\.scss}line{font-family:\0000365}}
 .animar .item:first-child {
-  -webkit-box-ordinal-group: 6;
-      -ms-flex-order: 5;
-          order: 5; }
+  order: 5; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/casa\/Downloads\/Juan\/proyectosWEB2\/css_animacion\/Ejemplo_1\/sass\/components\/_button\.scss}line{font-family:\000031}}
 button {
   padding: 10px;
   margin: 10px;
