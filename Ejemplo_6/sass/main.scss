@@ -1,0 +1,28 @@
+* {
+    font-size: 1.3em;
+    text-decoration: none;
+    list-style: none;
+}
+
+.contenedor-flex {
+    display: flex;
+    min-height: 100vh;
+}
+
+a {
+    background-color: rgb(65, 104, 65);
+    color: white;
+    padding: 0.5em 1em;
+    display: inline-block;
+    margin: auto;
+    /* todo lo anterior se puede resumir o implementar en una sola propiedad*/
+    transition: background-color 1s 1s ease-in-out, 
+                color 2s ease-in, 
+                transform 0.3s;
+
+    &:hover {
+        color: rgb(21, 21, 24);
+        background-color: rgb(209, 80, 29);
+        transform: translateY(-10%);
+    }
+}
