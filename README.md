@@ -38,11 +38,11 @@ Nota importante: Existen propiedes animables y no animables. Como por ejemplo, l
 
 2. keyframes: determina los puntos claves o paradas donde algo cambia.
 
-Para mas informacion, visita:
+Para mas información, visita:
 
 * [TutorialRepublic](https://www.tutorialrepublic.com/css-reference/css-animatable-properties.php).
 * [CSS Referece](https://cssreference.io/).
-*[Codrops](https://tympanus.net/codrops/css_reference/).
-[Animatable CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties).
-[Referencias de CSS - MDN](https://developer.mozilla.org/es/docs/Web/CSS/Referencia_CSS).
-[Referencias de CSS - W3Schools](https://www.w3schools.com/cssref/)
+* [Codrops](https://tympanus.net/codrops/css_reference/).
+* [Animatable CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties).
+* [Referencias de CSS - MDN](https://developer.mozilla.org/es/docs/Web/CSS/Referencia_CSS).
+* [Referencias de CSS - W3Schools](https://www.w3schools.com/cssref/)
