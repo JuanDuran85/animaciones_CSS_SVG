@@ -58,6 +58,24 @@ rect {
     stroke: #72bd1c;
     stroke-width: 5;
     /*espacio que hay entre cada guion o linea en el borde*/
-    stroke-dasharray: 400;
+    stroke-dasharray: 800;
     animation: animacion 4.5s linear infinite;
 }
+
+.caja .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@keyframes animacion {
+    0%{
+        /*desde donde inicia a mover las lineas del borde*/
+        stroke-dashoffset: 800;
+    }
+
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
