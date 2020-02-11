@@ -58,7 +58,7 @@ rect {
     stroke: #72bd1c;
     stroke-width: 5;
     /*espacio que hay entre cada guion o linea en el borde*/
-    stroke-dasharray: 800;
+    stroke-dasharray: 400;
     animation: animacion 4.5s linear infinite;
 }
 
@@ -79,3 +79,58 @@ rect {
     }
 }
 
+@media (min-width: 400px) {
+    .caja__columna {
+        width: 82%;
+        height: 400px;
+    }
+}
+
+@media (min-width: 520px) {
+    .caja__columna {
+        width: 85%;
+        height: 320px;
+    }
+}
+
+@media (min-width: 600px) {
+    .caja__columna {
+        width: 82%;
+        height: 270px;
+    }
+}
+
+@media (min-width: 680px) {
+    .caja__columna {
+        width: 46%;
+        height: 460px;
+    }
+}
+
+@media (min-width: 780px) {
+    .caja__columna {
+        width: 47%;
+        height: 350px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contenedor {
+        width: 1024px;
+    }
+    .caja__columna {
+        width: 31%;
+        height: 480px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .contenedor {
+        width: 1200px;
+    }
+    .caja__columna {
+        width: 31%;
+        height: 430px;
+    }
+}
