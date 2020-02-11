@@ -19,12 +19,24 @@ a {
     color: #151518;
     background-color: #d1501d; }
 
+/* Trabajando con el SVG */
 .android {
   margin: 2em;
   width: 500px;
   height: 500px; }
 
 .icono {
-  fill: #AAC148; }
+  fill: #AAC148;
+  stroke: RoyalBlue;
+  stroke-width: 3; }
+
+.bizquierdo, .bderecho {
+  /* se pueden utilizar distintas propiedades separadas por coma*/
+  -webkit-transition: fill 1s ease-in, stroke 2s ease-out, stroke-width 2s ease-in-out;
+  transition: fill 1s ease-in, stroke 2s ease-out, stroke-width 2s ease-in-out; }
+  .bizquierdo:hover, .bderecho:hover {
+    fill: #AA5645;
+    stroke: #AAC148;
+    stroke-width: 6; }
 
 /*# sourceMappingURL=main.css.map */
