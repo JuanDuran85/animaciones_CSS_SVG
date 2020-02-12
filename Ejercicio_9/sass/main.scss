@@ -1,0 +1,32 @@
+.circulo {
+    width: 150px;
+    height: 150px;
+    background: orangered;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: left 0.5s, top 0.5s 0.5s;
+    -moz-transition: left 0.5s, top 0.5s 0.5s;
+    -o-transition: left 0.5s, top 0.5s 0.5s;
+    -ms-transition: left 0.5s, top 0.5s 0.5s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &:hover {
+        .circulo {
+            left: calc(100vw - 150px);
+            top: calc(100vh - 150px);
+        }
+    }
+}
+
+button {
+    margin: auto;
+}
