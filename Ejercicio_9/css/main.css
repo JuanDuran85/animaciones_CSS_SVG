@@ -11,6 +11,9 @@
   -moz-transition: left 0.5s, top 0.5s 0.5s;
   -o-transition: left 0.5s, top 0.5s 0.5s;
   -ms-transition: left 0.5s, top 0.5s 0.5s; }
+  .animar .circulo {
+    left: calc(100vw - 150px);
+    top: calc(100vh - 150px); }
 
 body {
   margin: 0;
@@ -26,9 +29,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  body:hover .circulo {
-    left: calc(100vw - 150px);
-    top: calc(100vh - 150px); }
 
 button {
   margin: auto; }

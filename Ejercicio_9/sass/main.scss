@@ -10,6 +10,11 @@
     -moz-transition: left 0.5s, top 0.5s 0.5s;
     -o-transition: left 0.5s, top 0.5s 0.5s;
     -ms-transition: left 0.5s, top 0.5s 0.5s;
+
+    .animar & {
+        left: calc(100vw - 150px);
+        top: calc(100vh - 150px);
+    }
 }
 
 body {
@@ -19,12 +24,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    &:hover {
-        .circulo {
-            left: calc(100vw - 150px);
-            top: calc(100vh - 150px);
-        }
-    }
 }
 
 button {
