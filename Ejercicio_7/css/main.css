@@ -1,0 +1,35 @@
+* {
+  font-size: 1.3em;
+  text-decoration: none;
+  list-style: none; }
+
+.contenedor-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh; }
+
+a {
+  background-color: #416841;
+  color: white;
+  padding: 0.5em 1em;
+  display: inline-block;
+  margin: auto;
+  left: 0;
+  position: relative;
+  /* todo lo anterior se puede resumir o implementar en una sola propiedad*/
+  -webkit-transition: background-color 1s 1s ease-in-out,  color 2s ease-in,  left .5s 1s,  -webkit-transform 0.3s;
+  transition: background-color 1s 1s ease-in-out,  color 2s ease-in,  left .5s 1s,  -webkit-transform 0.3s;
+  transition: background-color 1s 1s ease-in-out,  color 2s ease-in,  transform 0.3s, left .5s 1s;
+  transition: background-color 1s 1s ease-in-out,  color 2s ease-in,  transform 0.3s, left .5s 1s,  -webkit-transform 0.3s; }
+
+p {
+  margin: auto; }
+  p:hover a {
+    color: #151518;
+    background-color: #d1501d;
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+    left: -1000%; }
+
+/*# sourceMappingURL=main.css.map */
