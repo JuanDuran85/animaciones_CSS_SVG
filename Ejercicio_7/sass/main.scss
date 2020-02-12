@@ -18,10 +18,10 @@ a {
     left: 0;
     position: relative;
     /* todo lo anterior se puede resumir o implementar en una sola propiedad*/
-    transition: background-color 1s 1s ease-in-out, 
-                color 2s ease-in, 
-                transform 0.3s,
-                left .5s 1s;
+    transition: background-color 1s .1s ease-in-out, 
+                color 1s .2s ease-in, 
+                transform 1s .3s,
+                left .5s .9s;
 }
 
 p {
@@ -30,8 +30,8 @@ p {
         a {
             color: rgb(21, 21, 24);
             background-color: rgb(209, 80, 29);
-            transform: translateY(-10%);
-            left: -1000%;
+            transform: translateY(-50%);
+            left: -400%;
         }
     }
 }

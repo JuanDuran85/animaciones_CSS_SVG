@@ -18,18 +18,18 @@ a {
   left: 0;
   position: relative;
   /* todo lo anterior se puede resumir o implementar en una sola propiedad*/
-  -webkit-transition: background-color 1s 1s ease-in-out,  color 2s ease-in,  left .5s 1s,  -webkit-transform 0.3s;
-  transition: background-color 1s 1s ease-in-out,  color 2s ease-in,  left .5s 1s,  -webkit-transform 0.3s;
-  transition: background-color 1s 1s ease-in-out,  color 2s ease-in,  transform 0.3s, left .5s 1s;
-  transition: background-color 1s 1s ease-in-out,  color 2s ease-in,  transform 0.3s, left .5s 1s,  -webkit-transform 0.3s; }
+  -webkit-transition: background-color 1s .1s ease-in-out,  color 1s .2s ease-in,  left .5s .9s,  -webkit-transform 1s .3s;
+  transition: background-color 1s .1s ease-in-out,  color 1s .2s ease-in,  left .5s .9s,  -webkit-transform 1s .3s;
+  transition: background-color 1s .1s ease-in-out,  color 1s .2s ease-in,  transform 1s .3s, left .5s .9s;
+  transition: background-color 1s .1s ease-in-out,  color 1s .2s ease-in,  transform 1s .3s, left .5s .9s,  -webkit-transform 1s .3s; }
 
 p {
   margin: auto; }
   p:hover a {
     color: #151518;
     background-color: #d1501d;
-    -webkit-transform: translateY(-10%);
-            transform: translateY(-10%);
-    left: -1000%; }
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: -400%; }
 
 /*# sourceMappingURL=main.css.map */
